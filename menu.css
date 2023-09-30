@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-top: 0px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+    /* background-color: transparent !important; */
+
+    /* background-color: aqua; */
+    /* overflow:hidden; */
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    /* padding: 2px; */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    /* box-shadow: 2px 2px 2px; */
+    align-items: center;
+    /* align-content: center; */
+    background-color: rgba(14, 1, 1, 0.482);
+}
+
+@media (max-width:993px) {
+
+    .main-menua,
+    .social-link {
+        display: none;
+    }
+    nav{
+    position: relative;
+    background-color:black;
+    /* color: red; */
+
+    }
+
+}
+
+.main-menua ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-menua ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.main-menua ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: content;
+    align-content: space-between;
+
+}
+
+
+
+.social-link ul li i {
+    color: white;
+}
+
+.social-link ul li {
+    list-style: none;
+    margin: 5px;
+    padding-right: 5px;
+    /* color: black; */
+}
+
+.social-link ul {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 5px;
+}
+.container-fluid1
+{
+    background-image: url(./imaages/menu-bg-title-page-01.jpg.webp);
+    background-position:center;
+    background-size: cover;
+    
+}
+
+.inner
+{
+    height: 500px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+.inner h2
+{
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* footer */
+footer
+{
+    background-color: black;
+    color: white;
+}
+footer .container {
+    width: 70%;
+    
+}
+.footer-container h5
+{
+    margin-top: 10px;
+}
+.footer-container h4
+{
+    margin-bottom: 40px;
+}
+.footer-container ul{
+    /* display: flex; */
+    margin-top: 50px 0px 0px 0px;
+    /* margin: ; */
+    padding: 0px;
+}
+.footer-container li i{
+    padding-top: 2px;
+}
+.footer-container li a
+{
+    color: red;
+    text-decoration: none;
+}
+.footer-container .col-3 img {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.footer-container li{
+    list-style: none;
+    align-items: start;
+    display: flex;
+    font-family: Montserrat;
+    gap: 10px;
+    color: #999999;
+
+}
