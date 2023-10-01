@@ -41,10 +41,11 @@ nav {
     .social-link {
         display: none;
     }
-    nav{
-    position: relative;
-    background-color:black;
-    /* color: red; */
+
+    nav {
+        position: relative;
+        background-color: black;
+        /* color: red; */
 
     }
 
@@ -90,16 +91,15 @@ nav {
     flex-wrap: wrap;
     margin-right: 5px;
 }
-.container-fluid1
-{
+
+.container-fluid1 {
     background-image: url(./imaages/menu-bg-title-page-01.jpg.webp);
-    background-position:center;
+    background-position: center;
     background-size: cover;
-    
+
 }
 
-.inner
-{
+.inner {
     height: 500px;
     color: white;
     display: flex;
@@ -108,51 +108,237 @@ nav {
     align-items: center;
     /* align-content: center; */
 }
-.inner h2
-{
+
+.inner h2 {
     font-size: 4em;
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
 }
-/* footer */
-footer
+
+.con-headingh5 .child-h:hover
 {
+    color: red;
+}
+.con-headingh5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cod-heading-container h5,
+.cod-heading-container p {
+    color: #333333;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+
+}
+
+.row h4 {
+    letter-spacing: 1.8px;
+}
+
+/* Lunch section */
+.lunch-container div{
+
+    filter: brightness(40%);
+}
+.lunch-container {
+    background-image: url(./imaages/header-menu-01.jpg.webp);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.lunch-container h3 {
+    color: rgb(255, 255, 255) !important;
+    font-size: 60px;
+    font-weight: 800;
+    /* filter: brightness(100%); */
+    font-family: Poppins;
+    letter-spacing: 4px;
+}
+/* lunch container */
+main img:hover {
+    scale: 102%;
+}
+
+.lunch-menu-section img
+{
+    width: 100%;
+    border-radius: 5px;
+}
+main .container
+{
+    width: 70% !important;
+}
+.text-container h6,.text-container p,.text-container h5
+{
+    padding: 0px;
+    
+    margin-bottom: 5px;
+}
+.text-container h6:hover
+{
+    color: red;
+}
+.text-container h6{
+    font-weight: 300;
+    font-size: 18px;
+    font-family: Poppins;
+}
+.text-container p
+{
+    font-family: Montserrat;
+    color: #666666;
+}
+.text-container
+{
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    width: 100%;
+    align-items: start;
+}
+.text-container1
+{
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* text-align: start; */
+    align-items: center;
+    /* flex-direction: column; */
+    /* justify-content: start; */
+}
+
+/* Dinner css */
+
+.dinner-container-2 {
+    background-image: url(./imaages/header-menu-02.jpg.webp);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.dinner-container-2 h3 {
+    color: rgb(255, 255, 255) !important;
+    font-size: 60px;
+    font-weight: 800;
+    /* filter: brightness(100%); */
+    font-family: Poppins;
+    letter-spacing: 4px;
+}
+
+
+/* SPECIALS SIGN UP */
+.special-sing-up input {
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 250px;
+    color: black;
+}
+
+.special-sing-up h4 {
+    padding-top: 10px;
+    align-items: center;
+    letter-spacing: 3px;
+    font-family: Poppins;
+}
+
+.special-sing-up button {
+    border-radius: 10px;
+    padding: 8px 20px 8px 20px;
+    color: white;
+    background-color: black;
+}
+
+.special-sing-up {
+    display: flex;
+    padding: 100px 0px 100px 0px;
+    justify-content: center;
+    /* flex-basis: 10px; */
+    gap: 20px;
+}
+
+.special-sing-up-sec {
+    background-color: #efefef;
+}
+
+@media (max-width:1000px) {
+    .special-sing-up input {
+        height: 50px;
+    }
+
+    .special-sing-up {
+        flex-direction: column;
+        /* display: flex; */
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .special-sing-up-sec {
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+/* footer */
+footer {
     background-color: black;
     color: white;
 }
+
 footer .container {
     width: 70%;
-    
+
 }
-.footer-container h5
-{
+
+.footer-container h5 {
     margin-top: 10px;
 }
-.footer-container h4
-{
+
+.footer-container h4 {
     margin-bottom: 40px;
 }
-.footer-container ul{
+
+.footer-container ul {
     /* display: flex; */
     margin-top: 50px 0px 0px 0px;
     /* margin: ; */
     padding: 0px;
 }
-.footer-container li i{
+
+.footer-container li i {
     padding-top: 2px;
 }
-.footer-container li a
-{
+
+.footer-container li a {
     color: red;
     text-decoration: none;
 }
+
 .footer-container .col-3 img {
     width: 100%;
     padding: 0px;
     margin: 0px;
     margin-bottom: 10px;
 }
-.footer-container li{
+
+.footer-container li {
     list-style: none;
     align-items: start;
     display: flex;
