@@ -183,6 +183,7 @@ body {
 {
     border-radius: 15px;
     overflow: hidden;
+    width: 70%;
 
 }
 
@@ -190,7 +191,8 @@ body {
     text-align: center;
     /* padding: px; */
     padding-top: 20px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
     border-radius: 15px;
 
 }
@@ -199,10 +201,12 @@ body {
 .image-col img:hover
 {
     scale: 110%;
+    /* transition-duration: 1s; */
 }
 .image-col img {
     /* width: fit-content; */
-    width: 70%;
+    transition-duration: 1s;
+    width: 100%;
     height: auto;
 
     border-radius: 15px;

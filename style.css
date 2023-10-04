@@ -162,17 +162,23 @@ main img:hover {
     font-weight: 600;
 }
 
+.image-col div 
+{
+    overflow: hidden;
+    border-radius: 30px;
+
+}
 .image-col {
     text-align: center;
 }
 
 .image-col img {
     /* width: fit-content; */
-    width: 70%;
+    width: 100%;
     height: auto;
     border-radius: 30px;
     /* padding: 5vh; */
-    margin: 2vh;
+    /* margin: 2vh; */
     /* margin: auto; */
     /* align-items: center; */
 }
@@ -268,8 +274,10 @@ main img:hover {
     flex-wrap: wrap;
 }
 
-.card-s .card {
+.card-s .card div {
     border: 0px;
+    overflow: hidden;
+    border-radius: 5px;
 
 }
 
@@ -279,7 +287,15 @@ main img:hover {
     margin-top: 1.2rem;
 }
 
-.colimgn img {
+.colimgn div,
+.colimgs div,
+.colimg div
+{
+    overflow: hidden;
+    border-radius: 20px;
+}
+.colimgn img 
+{
     width: 100%;
     border-radius: 10px;
 }
@@ -415,6 +431,10 @@ main img:hover {
     text-align: center;
 }
 
+.container-image div
+{
+    overflow: hidden;
+}
 .container-image {
     align-items: center;
     text-align: center;
@@ -554,18 +574,30 @@ main img:hover {
     width: 75% !important;
 }
 
-.reservation-table-container .images {
+.reservation-table-container .images div
+{
+    overflow: hidden;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
+.reservation-table-container .images {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
 .reservation-table-container img {
-    padding-top: 10px;
-    width: 70%;
+    /* padding-top: 10px; */
+    width: 100%;
     /* display: flex; */
     text-align: center;
     align-items: center;
+    border-radius: 20px;
     justify-content: center;
 }
 
@@ -629,14 +661,25 @@ main img:hover {
 }
 
 .customers-review img {
-    width: 100px;
+    width: 100%;
     border-radius: 100%;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 
 }
 
-.customers-review .images {
+.customers-review .images div
+{
+    overflow: hidden;
+    width: 100px;
+    border-radius: 100%;
+    align-items: center;
+    border: 3px solid red;
+}
+.customers-review .images 
+{
     text-align: center;
+    justify-content: center;
+    display: flex;
 
 }
 

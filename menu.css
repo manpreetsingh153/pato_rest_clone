@@ -164,9 +164,15 @@ nav {
 }
 /* lunch container */
 main img:hover {
-    scale: 102%;
+    scale: 105%;
+    transition-duration: 1s;
 }
 
+.lunch-menu-section .col-lg-4 div
+{
+    overflow: hidden;
+    border-radius: 5px;
+}
 .lunch-menu-section img
 {
     width: 100%;
