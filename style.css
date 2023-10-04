@@ -309,7 +309,12 @@ main img:hover {
     width: 100%;
     border-radius: 20px;
 }
-
+.colimgs div
+{
+    /* display: flex; */
+    margin-bottom: 20px !important;
+    /* margin-top: 10px !important; */
+}
 .colimgs img {
     width: 100%;
     margin-bottom: 1.4rem;
