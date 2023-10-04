@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gallery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./ajax.aspnetcdn.com_ajax_jQuery_jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <div class="navlogo">
+                        <a href="./index.html"><img
+                                src="https://preview.colorlib.com/theme/pato/images/icons/logo.png.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="main-menua">
+                        <ul>
+                            <li><a href="./index.html">
+                                    HOME</a></li>
+                            <li><a href="./menu.html">
+                                    MENU</a></li>
+                            <li><a href="./reservation.html">
+                                    RESERVATION</a></li>
+                            <li><a href="./gallery.html">
+                                    GALLERY</a></li>
+                            <li><a href="./about.html">
+                                    ABOUT</a></li>
+                            <li><a href="./blog.html">
+                                    BLOG</a></li>
+                            <li><a href="./contact.html">
+                                    CONTACT</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="social-link">
+                        <ul>
+                            <li>
+
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+
+                            </li>
+                            <li><a href="#"> <i class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+
+                        <!-- <div class="col-lg-4 fa fa-facebook" style="padding-right: 1rem;"></div>
+                                        <div class="col-lg-4 fa fa-instagram" style="padding-right: 1rem;"></div>
+                                        <div class="col-lg-4 fa fa-twitter" style="padding-right: 1rem;"></div> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+        </nav>
+        </div>
+        <div class="container-fluid container-fluid1">
+
+            <div class="inner">
+                <h2>GALLERY</h2>
+            </div>
+    </header>
+    <!-- <hr> -->
+    <!-- main section -->
+    <main>
+        <section class="sec1 mt-5 pt-5">
+            <div class="container photo-text w-75">
+                <div id="myBtnContainer">
+                    <button class="btn active filter-button" data-filter="all" onclick="filterSelection('all')">ALL
+                        PHOTO</button>
+                    <button class="btn filter-button" data-filter="interior"
+                        onclick="filterSelection('interior')">INTERIOR</button>
+                    <button class="btn filter-button" data-filter="food" onclick="filterSelection('food')">FOOD</button>
+                    <button class="btn filter-button" data-filter="event"
+                        onclick="filterSelection('event')">EVENTS</button>
+                    <button class="btn filter-button" data-filter="vip" onclick="filterSelection('vip')">VIP
+                        GUESTS</button>
+                    <!-- <li><a href="#" rel="noopener noreferrer" onclick="filterSelection('all')">ALL PHOTO</a></li>
+                    <li><a href="#" rel="noopener noreferrer" onclick="filterSelection('INTERIOR')">INTERIOR</a></li>
+                    <li><a href="#" rel="noopener noreferrer" onclick="filterSelection('FOOD')">FOOD</a></li>
+                    <li><a href="#" rel="noopener noreferrer" onclick="filterSelection('EVENTS')">EVENTS</a></li>
+                    <li><a href="#" rel="noopener noreferrer" onclick="filterSelection('VIP')">VIP GUESTS</a></li> -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid mt-5 mb-5 p-5">
+                <div class="row d-flex photo-row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter event">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-13.jpg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter food">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-14.jpg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter event VIP">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-15.jpg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter food">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-16.jpg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter food">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-17.jpg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter interior vip">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-18.jpg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter interior">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-19.jpg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter interior">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-20.jpg.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 photo-gallery mb-4 filter event">
+                        <div>
+
+                            <img src="./imaages/photo-gallery-21.jpg.webp" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="page-number mb-5 pb-5">
+                <a href="#">
+                    <h6>1</h6>
+                </a>
+                <a href="#">
+                    <h6>2</h6>
+                </a>
+                <a href="#">
+                    <h6>3</h6>
+                </a>
+            </div>
+        </section>
+        <!-- SPECIALS SIGN UP -->
+        <section class="special-sing-up-sec">
+            <div class="special-sing-up">
+                <h4>SPECIALS SIGN UP</h4>
+                <input type="email" name="Email" placeholder="Email" id="">
+                <button type="submit">SIGN-UP</button>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <div class="container footer-container">
+            <div class="row pt-5 align-item-center">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <h4>CONTACT US</h4>
+                    <ul>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>8th floor, 379 Hudson St, New York, NY 10018</p>
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>(+1) 96 716 6879</p>
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>contact@site.com</p>
+                        </li>
+                    </ul>
+                    <h5>OPENING TIMES</h5>
+                    <ul>
+                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <p>09:30 AM - 11:00 PM</p>
+                        </li>
+                        <li><i class="fa fa-arrow-right"></i>
+                            <p>Every Day</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <h4>LATEST TWITTER</h4>
+                    <ul>
+
+                        <li>
+                            <p>
+                                <i class="fa fa-twitter" aria-hidden="true"></i> <a
+                                    href="https://preview.colorlib.com/theme/pato/index.html#">@colorlib</a>
+                                <br>Activello is a good option. It has a slider built into that displays the featured
+                                image in the slider. <a href="https://buff.ly/2zaSfAQ">https://buff.ly/2zaSfAQ</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>21 Dec 2017</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-twitter" aria-hidden="true"></i> <a
+                                    href="https://preview.colorlib.com/theme/pato/index.html#">@colorlib</a>
+                                <br>Activello is a good option. It has a slider built into that displays <a
+                                    href="https://buff.ly/2zaSfAQ">https://buff.ly/2zaSfAQ</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>21 Dec 2017</p>
+                        </li>
+                    </ul>
+                    <div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <h4>GALLERY</h4>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-01.jpg.webp"
+                                alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-02.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-03.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-04.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-05.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-06.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-07.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-08.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-08.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-10.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-11.jpg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-11.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f86f59e8ea.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

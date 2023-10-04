@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-top: 0px;
+    /* padding-top: 30px !important; */
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+    /* background-color: transparent !important; */
+
+    /* background-color: aqua; */
+    /* overflow:hidden; */
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    /* padding: 2px; */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    /* box-shadow: 2px 2px 2px; */
+    align-items: center;
+    /* align-content: center; */
+    background-color: rgba(14, 1, 1, 0.482);
+}
+
+@media (max-width:993px) {
+
+    .main-menua,
+    .social-link {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        background-color: black;
+        /* color: red; */
+
+    }
+
+}
+
+.main-menua ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.main-menua ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    /* margin-right: 40px; */
+}
+
+.main-menua ul {
+    /* margin-left: 40px; */
+    display: flex;
+
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex: content; */
+    align-content: space-between;
+
+}
+
+
+
+.social-link ul li i {
+    color: white;
+}
+
+.social-link ul li {
+    list-style: none;
+    margin: 5px;
+    padding-right: 5px;
+    /* color: black; */
+}
+
+.social-link ul {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 5px;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container-fluid1 {
+    background-image: url(./imaages/bg-title-page-03.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.inner {
+    height: 500px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.inner h2 {
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* section 1 */
+.blog-image-main div {
+    /* padding: 20px; */
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.blog-image-main img:hover {
+    scale: 105%;
+    transition-duration: 0.5s;
+
+}
+
+.blog-image-main img {
+    width: 100%;
+    /* overflow: hidden; */
+
+
+}
+.cooking-hea-tag p
+{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+}
+.cooking-hea-tag-1 p
+{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    /* letter-spacing: px; */
+}
+.cooking-hea-tag-2 p i
+{
+    color: #646262;
+}
+.cooking-hea-tag-2 p a
+{
+    font-size: 15px;
+    text-decoration: none;
+    /* color: #666666; */
+    color: black;
+    font-family: Montserrat;
+}
+.cooking-hea-tag-2 p
+{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* color: black; */
+    /* letter-spacing: px; */
+}
+.number-sec 
+{
+    display: flex;
+    gap: 20px;
+}
+.number-sec .p1
+{
+    background-color: black;
+    color: white;
+}
+.home-cont
+{
+    font-family: Montserrat;
+    padding-top: 10px;
+}
+.number-sec p
+{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    color: black;
+}
+.cooking-heading h3
+{
+    font-weight: 400;
+    font-family: Poppins;
+    font-size: 30px;
+    letter-spacing: 2.5px;
+}
+@media screen and (max-width:992px) {
+    
+    .container-flu .container .blog-image-main
+    {
+        border-right: 0px !important;
+        /* border-top: 1px solid gray; */
+        padding-right: 50px;
+    }
+}
+
+.container-flu .container .blog-image-main
+{
+    border-right: 1px solid gray;
+    padding-right: 30px;
+    padding-top: 100px !important;
+}
+.search-sec2
+{
+    padding-top: 100px !important;
+
+}
+.container-flu
+{
+    border-top: 1px solid gray;
+    padding-right: 10px;
+}
+.container-flu input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #999999;
+}
+.month-sec
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container-flu h4 {
+    letter-spacing: 3px;
+}
+
+.container-flu button {
+    padding: 10px;
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-flu button i {
+    /* padding: 10px; */
+    color: white;
+}
+
+.container-flu ul li a {
+    text-decoration: none;
+    margin-top: 0px;
+    color: black;
+    /* padding-left: 15px; */
+    margin-left: 15px;
+}
+
+.container-flu ul li {
+    list-style: none;
+    font-size: small;
+    letter-spacing: 1.5px;
+}
+
+.content-contain img 
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.content-contain a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-family: Poppins;
+    letter-spacing: 0.1px;
+}
+.content-contain .cont
+{
+    display: flex;
+    gap: 15px;
+    /* justify-content: space-between; */
+}
+.content-contain p
+{
+    color: rgb(79, 76, 76);
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: Poppins;
+    letter-spacing: 0.1px;
+}
+.image-fact
+{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .container {
+    width: 70%;
+
+}
+
+.footer-container h5 {
+    margin-top: 10px;
+}
+
+.footer-container h4 {
+    margin-bottom: 40px;
+}
+
+.footer-container ul {
+    /* display: flex; */
+    margin-top: 50px 0px 0px 0px;
+    /* margin: ; */
+    padding: 0px;
+}
+
+.footer-container li i {
+    padding-top: 2px;
+}
+
+.footer-container li a {
+    color: red;
+    text-decoration: none;
+}
+
+.footer-container .col-3 img {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.footer-container li {
+    list-style: none;
+    align-items: start;
+    display: flex;
+    font-family: Montserrat;
+    gap: 10px;
+    color: #999999;
+
+}
