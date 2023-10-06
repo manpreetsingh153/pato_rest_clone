@@ -272,18 +272,26 @@ main img:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border: 0px !important;
 }
 
 .card-s .card div {
-    border: 0px;
+    border: 0px !important;
     overflow: hidden;
     border-radius: 5px;
+
+}
+.card-s .card  {
+    border: 0px !important;
+    margin-bottom: 20px;
+    
 
 }
 
 .card-s .card-body {
     margin-left: 0px;
     padding-left: 0;
+    border: 0px !important;
     margin-top: 1.2rem;
 }
 
@@ -378,7 +386,7 @@ main img:hover {
     position: relative;
 }
 
-.btn-class h5 {}
+/* .btn-class h5 {} */
 
 .btn-class {
     /* display: flex; */
@@ -717,13 +725,31 @@ main img:hover {
     text-align: center;
 }
 
-.our-vedio {
+.our-vedio div 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.our-vedio button
+{
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 50%;
+}
+.our-vedio
+{
+    display: flex;
+    justify-content: center;
     background-image: url(./imaages/bg-cover-video-02.jpg.webp);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 400px;
 }
 
 .carousel-item {
@@ -789,7 +815,17 @@ main img:hover {
     }
 
 }
-
+.mfp-container img:before 
+{
+    width: 100%;
+}
+.mfp-container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+  
 /* footer */
 footer
 {
