@@ -141,13 +141,64 @@ $(document).ready(function () {
   $(this).addClass("active");
 });
 
-$(function() {
-  $('.popup-youtube').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false
+$(function () {
+  $(".popup-youtube").magnificPopup({
+    disableOn: 700,
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
   });
+});
+
+// const form = document.querySelector("#form");
+// const submitButton = document.querySelector("#submit");
+// const scriptURL =
+//   "https://script.google.com/macros/s/AKfycbxVVSp65YIHGnjI422YOg6paGrU8Y83udcxDM7hAPCqPsTc-ozxDa-v3kTmCfuZdywzIQ/exec";
+
+// form.addEventListener("submit", (e) => {
+//   submitButton.disabled = true;
+//   e.preventDefault();
+//   let requestBody = new FormData(form);
+//   fetch(scriptURL, { method: "POST", body: requestBody })
+//     .then((response) => {
+//       alert("Success!", response);
+//       submitButton.disabled = false;
+//     })
+//     .catch((error) => {
+//       alert("Error!", error.message);
+//       submitButton.disabled = false;
+//     });
+// });
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbxVVSp65YIHGnjI422YOg6paGrU8Y83udcxDM7hAPCqPsTc-ozxDa-v3kTmCfuZdywzIQ/exec";
+const form = document.forms["quote-form"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) =>
+      alert("Thank you! your form is submitted successfully.")
+    )
+    .then(() => {
+      window.location.reload();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+const scriptURL2 =
+  "https://script.google.com/macros/s/AKfycbxVVSp65YIHGnjI422YOg6paGrU8Y83udcxDM7hAPCqPsTc-ozxDa-v3kTmCfuZdywzIQ/exec";
+const form2 = document.forms["quote-form2"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL2, { method: "POST", body: new FormData(form2) })
+    .then((response) =>
+      alert("Thank you! your form is submitted successfully.")
+    )
+    .then(() => {
+      window.location.reload();
+    })
+    .catch((error) => console.error("Error!", error.message));
 });
